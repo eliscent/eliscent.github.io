@@ -1,19 +1,19 @@
 
 /* taustan väri */
 .navbar-custom {
-    background-color:rgb(30, 58, 27); 	
+    background-color:rgb(157, 197, 152); 	
 }
 /* ekstin väri */
 .navbar-custom .navbar-text{
-    color:#FFFFFF;
+    color:#323853;
 }
 /* linkin väri */
   .navbar-custom .navbar-nav .nav-link {
-    color:#a1a9cc;;
+    color:#323853;
 }
 /* aktiivisen & hover-linkin väri */ 
  .navbar-custom .nav-item.active .nav-link,
  .navbar-custom .nav-item:hover .nav-link {
-    color: #8f6caf;
+    color: #1d0e2b;
 }
 
