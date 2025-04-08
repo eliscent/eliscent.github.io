@@ -34,6 +34,7 @@ body {
 }
 .container-custom {
     background-color:rgb(240, 203, 224); 	
+    max-width: 500px;
 }
 
 /* Ruudukko */
