@@ -5,7 +5,7 @@ nav {
 }
 /* taustan väri */
 .navbar-custom {
-    background-color:rgb(157, 197, 152); 	
+    background-color:rgb(247, 200, 226); 	
 }
 /* tekstin väri */
 .navbar-custom .navbar-text{
@@ -21,11 +21,27 @@ nav {
     color: #1d0e2b;
 }
 
+/* Sivun yleisilme */
+body {
+    background-image: url(Kuvat/tile.jpg);
+    background-size:cover;
+}
+
 /* Karuselli */
 /* karusellin tekstilaatikot ja karusellin tausta*/
 .carousel-caption {
-    background-color: #7da78ddc;
+    background-color: #c595b3dc;
 }
 .container-custom {
-    background-color:rgb(157, 197, 152); 	
+    background-color:rgb(240, 203, 224); 	
 }
+
+/* Ruudukko */
+.colblue {
+    background-color: #ccd4f3;
+}
+
+.colpink {
+    background-color: #f3cee8;
+}
+
