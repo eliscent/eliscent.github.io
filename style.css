@@ -1,9 +1,13 @@
 
+/* Navigaatio */
+nav {
+    margin-bottom: 5%;
+}
 /* taustan väri */
 .navbar-custom {
     background-color:rgb(157, 197, 152); 	
 }
-/* ekstin väri */
+/* tekstin väri */
 .navbar-custom .navbar-text{
     color:#323853;
 }
@@ -17,7 +21,11 @@
     color: #1d0e2b;
 }
 
-/* karusellin tekstilaatikot */
+/* Karuselli */
+/* karusellin tekstilaatikot ja karusellin tausta*/
 .carousel-caption {
-    background-color: #c0c7e7e7;
+    background-color: #7da78ddc;
+}
+.container-custom {
+    background-color:rgb(157, 197, 152); 	
 }
