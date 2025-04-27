@@ -137,3 +137,16 @@ body, p, a, li {
 .flip-card-back .card-body {
   text-align: center;
 }
+
+/* Change the background color of the header row */
+.table thead {
+  background-color: #f3c1d8; /* Example: soft red */
+  color: #000; /* Text color for the header */
+  font-weight: bold;
+}
+
+
+.accordion-button:not(.collapsed) {
+  background-color: #f3c1d8;
+  color: #000; 
+}
