@@ -1,4 +1,5 @@
 /* Navigaatio */
+
 /* taustan väri */
 .navbar-custom {
   background-color: rgb(255, 240, 248);
@@ -27,82 +28,50 @@ body {
 }
 
 /* Headers (h1, h2, h3) */
-h1,
-h2,
-h3 {
+h1, h2, h3 {
   font-family: "Quicksand", sans-serif;
 }
 
 /* Body fontti */
-body,
-p,
-a,
-li {
+body, p, a, li {
   font-family: "Lora", serif;
 }
 
-/* Karuselli */
-/* karusellin tekstilaatikot ja karusellin tausta*/
-.carousel-caption {
-  background-color: #c595b3dc;
-}
 
-/* Karuselli kuvat */
+/* Karuselli */
 .carousel-inner img {
   max-width: 500px;
   margin: auto;
 }
 
-.container-custom {
-  background-color: rgb(240, 203, 224);
-  max-width: 500px;
-}
-
-/* Custom Grid Item Styling */
+/* Ruudukko */
 .grid-item {
   background-color: #f9f9f9;
-  /* Light, soft background color */
   border: 1px solid #e0e0e0;
-  /* Light gray border for a clean, soft look */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  /* Subtle shadow for depth */
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  /* Smooth hover effects */
   padding: 20px;
   height: 100%;
-  /* Ensures that the grid item fills the space */
 }
 
-/* Hover Effects for the Grid Items */
+/* Ruudukko efektit */
 .grid-item:hover {
   transform: translateY(-5px);
-  /* Slight lift effect */
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
-  /* Enhanced shadow on hover */
 }
 
-/* Optional: Soft rounded corners */
+/* Ruudukko kulmat */
 .rounded {
   border-radius: 12px;
-  /* Make the corners softer */
 }
 
-/* Optional: Adding padding to the container */
-.container {
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-/* Styling for the flip cards */
+/* Kortit */
 .flip-card {
   width: 100%;
   padding-top: 100%;
-  /* This creates a square aspect ratio */
   position: relative;
   perspective: 1000px;
-  /* Add depth to the card */
   border: none;
-  /* Remove any borders */
 }
 
 .flip-card-inner {
@@ -113,58 +82,46 @@ li {
   height: 100%;
   transform-style: preserve-3d;
   transition: transform 0.6s;
-  /* Animation speed */
 }
 
 .flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
-  /* Flip the card when hovered */
 }
 
-/* Front of the card */
+/* Kortin etuosa */
 .flip-card-front {
   position: absolute;
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
-  /* Hide the back when flipped */
 }
 
 .flip-card-front img {
   width: 100%;
   height: 100%;
-  /* Ensure the image fills the front */
   object-fit: cover;
-  /* Ensure the image covers the space proportionally */
   border-radius: 10px;
-  /* Optional: Rounded corners */
 }
 
-/* Back of the card */
+/* Kortin takaosa */
 .flip-card-back {
   background-color: #ffffff;
-  /* White background */
   color: black;
-  /* Text color */
   font-size: small;
   transform: rotateY(180deg);
-  /* Make the back initially hidden */
   backface-visibility: hidden;
-  /* Hide the back when flipped */
   border-radius: 10px;
-  /* Optional: Rounded corners */
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 10px;
-  /* Optional: Adjust padding for better spacing */
 }
 
-/* Optional: Ensures the text in the back is centered */
 .flip-card-back .card-body {
   text-align: center;
 }
 
+/* Haitari */
 .accordion-button:not(.collapsed) {
   background-color: #f3c1d8;
   color: #000;
