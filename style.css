@@ -1,19 +1,16 @@
 
 /* Navigaatio */
-nav {
-    margin-bottom: 5%;
-}
 /* taustan väri */
 .navbar-custom {
     background-color:rgb(255, 240, 248); 	
 }
 /* linkin väri */
-  .navbar-custom .navbar-nav .nav-link {
+.navbar-custom .navbar-nav .nav-link {
     color:#000000;
 }
 /* aktiivisen & hover-linkin väri */ 
- .navbar-custom .nav-item.active .nav-link,
- .navbar-custom .nav-item:hover .nav-link {
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:hover .nav-link {
     color: #ffa9de;
 }
 
@@ -38,6 +35,8 @@ body, p, a, li {
     font-family: 'Lora', serif;
 }
 
+
+
 /* Karuselli */
 /* karusellin tekstilaatikot ja karusellin tausta*/
 .carousel-caption {
@@ -53,12 +52,85 @@ body, p, a, li {
     max-width: 500px;
 }
 
-/* Ruudukko */
-.colblue {
-    background-color: #ccd4f3;
-}
 
-.colpink {
-    background-color: #f3cee8;
-}
+/* Custom Grid Item Styling */
+.grid-item {
+    background-color: #f9f9f9; /* Light, soft background color */
+    border: 1px solid #e0e0e0; /* Light gray border for a clean, soft look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
+    padding: 20px;
+    height: 100%; /* Ensures that the grid item fills the space */
+  }
 
+  /* Hover Effects for the Grid Items */
+  .grid-item:hover {
+    transform: translateY(-5px); /* Slight lift effect */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+  }
+
+  /* Optional: Soft rounded corners */
+  .rounded {
+    border-radius: 12px; /* Make the corners softer */
+  }
+
+  /* Optional: Adding padding to the container */
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+
+/* Styling for the flip cards */
+.flip-card {
+    width: 100%;
+    height: 100%;
+    perspective: 1000px; /* Add depth to the card */
+    border: none; /* Remove any borders */
+  }
+
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.6s; /* Animation speed */
+  }
+
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg); /* Flip the card when hovered */
+  }
+
+  /* Front of the card */
+  .flip-card-front {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; /* Hide the back when flipped */
+  }
+
+  .flip-card-front img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  /* Back of the card */
+  .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #f9f9f9;
+    color: black;
+    transform: rotateY(180deg); /* Hide the back initially */
+    backface-visibility: hidden;
+    border-radius: 10px;
+  }
+
+  .flip-card-back .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  

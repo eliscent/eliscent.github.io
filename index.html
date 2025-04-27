@@ -17,72 +17,90 @@
 <nav class="navbar navbar-expand-lg navbar-custom shadow-sm">
   <div class="container">
     <a class="navbar-brand" href="#">Skincare Bliss</a>
+    
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
       <span class="navbar-toggler-icon"></span>
     </button>
+
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
         <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
-        <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+        <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing and FAQ</a></li>
       </ul>
     </div>
   </div>
 </nav>
 
-<!-- Carousel -->
-<div id="carouselExample" class="carousel carousel-dark slide mt-4" data-bs-ride="carousel">
+
+<!-- Karuselli -->
+<div id="carousel" class="carousel slide mt-4" data-bs-ride="carousel" data-bs-interval="4000">
   <div class="carousel-inner">
+    
     <div class="carousel-item active">
-      <img src="Kuvat/pic11.jpg" class="d-block" alt="...">
+      <img src="Kuvat/glowrecipe.jpg" class="d-block" alt="Kokoelma tuotteita">
     </div>
+
     <div class="carousel-item">
-      <img src="Kuvat/pic9.jpg" class="d-block" alt="...">
+      <img src="Kuvat/blueberrybounce.jpg" class="d-block" alt="Blueberry bounce tuote">
     </div>
+
     <div class="carousel-item">
-      <img src="Kuvat/pic7.jpg" class="d-block" alt="...">
+      <img src="Kuvat/plumplump.jpg" class="d-block" alt="Plum plump tuote">
     </div>
+
+    <div class="carousel-item">
+      <img src="Kuvat/watermelonglow.jpg" class="d-block" alt="Watermelon Glow tuote">
+    </div>
+
+    <div class="carousel-item">
+      <img src="Kuvat/plumplump2.jpg" class="d-block" alt="Plum moisturizer tuote">
+    </div>
+
   </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon"></span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-    <span class="carousel-control-next-icon"></span>
-  </button>
 </div>
 
-<!-- About Section -->
+<!-- About -->
 <div class="container mt-5 text-center">
   <h2>Welcome to Skincare Bliss</h2>
-  <p class="lead">Curated skincare products by Glow Recipe to bring out your natural glow.  
+  <p>Curated skincare products by Glow Recipe to bring out your natural glow.  
     Browse our handpicked selections made with love and nature’s finest ingredients.
   </p>
   <a href="products.html" class="btn btn-light mt-3">View Products</a>
 </div>
 
-<!-- Grid Section -->
+<!-- Ruudukko -->
 <div class="container mt-5">
   <h2 class="text-center mb-4">Our Skincare Philosophy</h2>
+
   <div class="row">
+
+    <!-- Ensimmäinen ruudukko laatikko -->
     <div class="col-md-4 mb-4">
-      <div class="p-4 border rounded text-center">
+      <div class="grid-item p-4 border rounded text-center">
         <h5>Natural Ingredients</h5>
         <p>We source pure botanicals to nourish your skin without harsh chemicals.</p>
       </div>
     </div>
+
+    <!-- Toinen ruudukko laatikko -->
     <div class="col-md-4 mb-4">
-      <div class="p-4 border rounded text-center">
+      <div class="grid-item p-4 border rounded text-center">
         <h5>Gentle Formulas</h5>
         <p>Perfect for sensitive skin, our products are dermatologically tested and safe.</p>
       </div>
     </div>
+
+    <!-- Kolmas ruudukko laatikko -->
     <div class="col-md-4 mb-4">
-      <div class="p-4 border rounded text-center">
+      <div class="grid-item p-4 border rounded text-center">
         <h5>Eco-Friendly</h5>
         <p>We’re committed to sustainability with recyclable packaging and ethical practices.</p>
       </div>
     </div>
+
   </div>
+
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
