@@ -5,20 +5,16 @@ nav {
 }
 /* taustan väri */
 .navbar-custom {
-    background-color:rgb(247, 200, 226); 	
-}
-/* tekstin väri */
-.navbar-custom .navbar-text{
-    color:#323853;
+    background-color:rgb(255, 240, 248); 	
 }
 /* linkin väri */
   .navbar-custom .navbar-nav .nav-link {
-    color:#323853;
+    color:#000000;
 }
 /* aktiivisen & hover-linkin väri */ 
  .navbar-custom .nav-item.active .nav-link,
  .navbar-custom .nav-item:hover .nav-link {
-    color: #1d0e2b;
+    color: #ffa9de;
 }
 
 /* Sivun yleisilme */
@@ -27,10 +23,30 @@ body {
     background-size:cover;
 }
 
+/* Logo fontti */
+.logo-font {
+    font-family: 'Playfair Display', serif;
+}
+
+/* Headers (h1, h2, h3) */
+h1, h2, h3 {
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* Body fontti */
+body, p, a, li {
+    font-family: 'Lora', serif;
+}
+
 /* Karuselli */
 /* karusellin tekstilaatikot ja karusellin tausta*/
 .carousel-caption {
     background-color: #c595b3dc;
+}
+/* Karuselli kuvat */
+.carousel-inner img {
+    max-width: 500px;
+    margin: auto;
 }
 .container-custom {
     background-color:rgb(240, 203, 224); 	
