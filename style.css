@@ -83,54 +83,57 @@ body, p, a, li {
 
 /* Styling for the flip cards */
 .flip-card {
-    width: 100%;
-    height: 100%;
-    perspective: 1000px; /* Add depth to the card */
-    border: none; /* Remove any borders */
-  }
+  width: 100%;
+  padding-top: 100%; /* This creates a square aspect ratio */
+  position: relative;
+  perspective: 1000px; /* Add depth to the card */
+  border: none; /* Remove any borders */
+}
 
-  .flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    transform-style: preserve-3d;
-    transition: transform 0.6s; /* Animation speed */
-  }
+.flip-card-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.6s; /* Animation speed */
+}
 
-  .flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg); /* Flip the card when hovered */
-  }
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg); /* Flip the card when hovered */
+}
 
-  /* Front of the card */
-  .flip-card-front {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden; /* Hide the back when flipped */
-  }
+/* Front of the card */
+.flip-card-front {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden; /* Hide the back when flipped */
+}
 
-  .flip-card-front img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-  }
+.flip-card-front img {
+  width: 100%;
+  height: 100%; /* Ensure the image fills the front */
+  object-fit: cover; /* Ensure the image covers the space proportionally */
+  border-radius: 10px; /* Optional: Rounded corners */
+}
 
-  /* Back of the card */
-  .flip-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: #f9f9f9;
-    color: black;
-    transform: rotateY(180deg); /* Hide the back initially */
-    backface-visibility: hidden;
-    border-radius: 10px;
-  }
+/* Back of the card */
+.flip-card-back {
+  background-color: #ffffff; /* White background */
+  color: black; /* Text color */
+  font-size: small;
+  transform: rotateY(180deg); /* Make the back initially hidden */
+  backface-visibility: hidden; /* Hide the back when flipped */
+  border-radius: 10px; /* Optional: Rounded corners */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px; /* Optional: Adjust padding for better spacing */
+}
 
-  .flip-card-back .card-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
+/* Optional: Ensures the text in the back is centered */
+.flip-card-back .card-body {
+  text-align: center;
+}
