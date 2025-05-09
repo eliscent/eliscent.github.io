@@ -1,0 +1,34 @@
+{
+  "title": "Skincare Bliss - Products",
+  "description": "A selection of skincare products offering various benefits for your skin.",
+  "image": "Kuvat/glowrecipe.jpg",
+  "topics": [
+    "Gentle cleansing for balanced skin",
+    "Hydration and skin plumping",
+    "Lightweight sun protection solutions",
+    "Daily moisturizers for soft, healthy skin"
+  ],
+  
+  "products": [
+    {
+      "name": "Blueberry Bounce",
+      "description": "Removes impurities without stripping the skin of moisture.",
+      "image": "Kuvat/blueberry_bounce.jpg"
+    },
+    {
+      "name": "Plum Plump",
+      "description": "Brightens and revitalizes dull skin for a youthful glow.",
+      "image": "Kuvat/plum_plump.jpg"
+    },
+    {
+      "name": "Watermelon Glow",
+      "description": "Protects skin from UV rays with a lightweight, invisible formula.",
+      "image": "Kuvat/watermelon_glow.jpg"
+    },
+    {
+      "name": "Plum Moisturizer",
+      "description": "Deeply hydrates and nourishes skin for a soft, smooth feel.",
+      "image": "Kuvat/plum_moisturizer.jpg"
+    }
+  ]
+}
